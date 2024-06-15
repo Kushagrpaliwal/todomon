@@ -153,10 +153,10 @@ const Calendar = () => {
   };
 
   return (
-    <div className="ml-[50px] card">
+    <div className="ml-[50px] card cal">
       <p className='font-bold text-3xl mb-[20px]'>Events</p>
       <p className='font-light'>Here you can add events directly to your google calendar and can delete the events too .</p>
-      <div className='mt-[35px] p-8 h-auto w-[85%] border border-gray-300 rounded-xl mb-[35px]'>
+      <div className='mt-[35px] p-8 h-auto w-[85%] border border-gray-300 rounded-xl mb-[35px] cal'>
       <form onSubmit={handleSubmit(scheduleMeeting)}>
         <div className="form-group">
           <input
@@ -180,7 +180,7 @@ const Calendar = () => {
         </div>
         <hr className="border-gray-300 mb-3 " />
         <div className="form-group">
-          <label htmlFor="appointmentTime" className='font-light'>Event Date & Time -:</label>
+          <label htmlFor="appointmentTime" className='font-light date'>Event Date & Time -:</label>
           <input
             type="datetime-local"
             id="appointmentTime"
@@ -190,10 +190,12 @@ const Calendar = () => {
           {errors.appointmentTime && <span className='italic font-light'>This field is required</span>}
         </div>
         <br />
+        <div className='calbutton'>
         <button 
           type="submit" 
           id="schedule-button" 
           className='rounded-lg p-2 mr-2 bg-green1 drop-shadow-md hover:drop-shadow-xl text-white'>Schedule Appointment</button>
+          </div>
       </form>
       </div>
       <Script

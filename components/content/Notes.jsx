@@ -84,9 +84,9 @@ const Notes = () => {
   };
 
   return (
-    <div className='ml-[50px] h-[100%]'>
+    <div className='ml-[50px] h-[100%] todo'>
       <h1 className=" font-bold text-3xl">Notes</h1>
-      <div className=" w-[50%] h-auto mt-5 mb-[20px] p-5 bg-white border-gray-300 drop-shadow-lg rounded-xl ">
+      <div className=" w-[50%] h-auto mt-5 mb-[20px] p-5 bg-white border-gray-300 drop-shadow-lg rounded-xl todo">
         <div className="">
           <textarea
             type="text"

@@ -54,8 +54,8 @@ const Completed = () => {
 
   return (
     <div className='h-[100%]'>
-      <h1 className="ml-[50px] font-bold text-3xl">Completed Tasks</h1>
-      <div className="ml-[50px] w-[85%] h-auto mt-5 mb-[20px] p-5  rounded-lg">
+      <h1 className="ml-[50px] font-bold text-3xl todo">Completed Tasks</h1>
+      <div className="ml-[50px] w-[85%] h-auto mt-5 mb-[20px] p-5  rounded-lg todo">
         {completedTasks.length > 0 ? (
           <ul>
             {completedTasks.map(task => (

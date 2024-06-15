@@ -7,14 +7,14 @@ import Footer2 from '@/components/Footer2'
 
 const page = () => {
   return (
-    <>
+    <div className=''>
     <Navbar/>
     <Hero/>
     <Features/>
     <Tutorial/>
     <Footer/>
     <Footer2/>
-    </>
+    </div>
 
   )
 }

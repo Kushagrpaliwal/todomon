@@ -97,10 +97,10 @@ const Todolist = () => {
 
   return (
     <div className="h-auto">
-      <h1 className="ml-[50px] font-bold text-3xl">
+      <h1 className="ml-[50px] font-bold text-3xl todo">
         TodoList
       </h1>
-      <div className="ml-[50px] h-auto w-[85%] border border-gray-300 rounded-xl mt-3 p-5">
+      <div className="ml-[50px] h-auto w-[85%] border border-gray-300 rounded-xl mt-3 p-5 todo" >
         <textarea
           type="text"
           id="title"
@@ -129,7 +129,7 @@ const Todolist = () => {
         </div>
       </div>
 
-      <div className="w-[85%] h-auto mt-5 ml-[50px] mb-[20px] p-5">
+      <div className="w-[85%] h-auto mt-5 ml-[50px] mb-[20px] p-5 todo">
         {entries.map((entry) => (
           <div key={entry.id}>
             <div className="flex flex-row">

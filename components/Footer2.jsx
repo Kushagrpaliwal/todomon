@@ -3,14 +3,14 @@ import Image from "next/image"
 
 const Footer2 = () => {
   return (
-    <div className="flex flex-row w-full">
-        <div className="flex flex-col ml-[100px]">
+    <div className="flex flex-row w-full tutucards">
+        <div className="flex flex-col ml-[100px] foot2">
             <Image src="/logo.svg" alt="logo" width={250} height={250} />
             <p className="w-[500px] mt-[20px]">"Stay organized and achieve more with our TodoList. Your productivity, simplified. © 2024 TodoList Inc. All rights reserved."</p>
             <p className="mt-[20px] font-light italic mb-[50px]">Designed and created by Kushagra paliwal</p>
         </div>
         <div className="flex flex-col w-full">
-            <div className="flex flex-row text-center list-none gap-[100px] text-lg justify-end mr-[50px]">
+            <div className="flex flex-row text-center list-none gap-[100px] text-lg justify-end mr-[50px] foot2">
             <li className="hover:text-green1 cursor-pointer">Home</li>
             <li className="hover:text-green1 cursor-pointer">About</li>
             <li className="hover:text-green1 cursor-pointer">Features</li>

@@ -24,12 +24,12 @@ const Login = () => {
   };
 
   return (
-    <div className="mt-[50px] ml-[150px]">
-      <div>
+    <div className="mt-[50px] ml-[150px] login">
+      <div className="">
         <Link href="/"><Image src="/logo.svg" alt="logo" width={250} height={250} /></Link>
       </div>
-      <div className="flex flex-row">
-        <div className="flex flex-col mt-[50px] ml-[20px] font-bold text-[50px] mb-[100px]">
+      <div className="flex flex-row logincard">
+        <div className="flex flex-col mt-[50px] ml-[20px] font-bold text-[50px] mb-[100px] login">
           <div className="">Login</div>
           <form onSubmit={handleLogin} className="mt-[100px] w-[400px] creds"> 
             <div className="mb-[20px]">
@@ -58,8 +58,8 @@ const Login = () => {
           </form>
           <div className="text-[14px] font-extralight mt-2">Account Not created? <Link href="/Signup" className="hover:text-green1">Signup</Link></div>
         </div>
-        <div className="w-full ">
-          <Image src="/login.svg" alt="loginimg" width={500} height={500} className="ml-[100px] mt-[80px]" />
+        <div className="w-full ml-[100px] loginimg">
+          <Image src="/login.svg" alt="loginimg" width={500} height={500} className=" mt-[80px]" />
         </div>
       </div>
     </div>

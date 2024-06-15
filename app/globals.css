@@ -65,4 +65,121 @@ input[type="datetime-local"]::-moz-datetime-edit {
   color: #32CD32; /* Change this to your desired color */
 }
 
+@media  only screen and (max-width:600px){
+  .tutucards{
+    position: flex;
+    flex-direction: column;
+  }
+  .tututitle , .foottitle{
+    width: 100%;
+    padding: 10px;
+  }
+
+  .foottitle2{
+    width: 100%;
+    font-size: 45px;
+  }
+.foot2 , .foot2 p {
+  margin-right: 0;
+  margin-left: 0;
+  width: 100%;
+  padding: 20px;
+  position: flex;
+  justify-content: center;
+}
+.feat{
+  width: 100%;
+}
+
+.feat2{
+  position: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.feat3{
+  position: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-left: 0;
+}
+.hero{
+  width: 100%;
+  text-align: center;
+}
+
+.hero1{
+  margin-top: 0;
+  width: 100%;
+  padding: 10px;
+}
+.login{
+  width: 100%;
+  margin-left: 0;
+  padding: 20px;
+}
+.loginimg{
+  display: none;
+
+}
+.logincard{
+  display: flex;
+  flex-direction: column;
+}
+.creds{
+  width: 100%;
+}
+.mc{
+  margin-left: 0;
+}
+
+.mclogo{
+  margin-left: 15px;
+  width: 200px;
+}
+.mclogo2{
+  width: 12px;
+}
+
+.mclist{
+  margin-left: 15px;
+}
+.mclist li{
+  margin-top: 15px;
+}
+
+.todo{
+  margin-left: 0;
+  width: 100%;
+}
+
+.sidebar{
+  margin-top: 80px;
+  padding: 10px;
+}
+
+.cal{
+  padding: 0;
+  width: 100%;
+  margin-left: 0;
+}
+.cal p{
+  padding: 10px;
+}
+
+.cal input{
+  padding: 10px;
+}
+
+.calbutton{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.date{
+  margin-left: 5px;
+}
+
+
+}
 

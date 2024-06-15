@@ -58,16 +58,20 @@ const Maincontent = () => {
   return (
     <div className="flex flex-row">
       {sidebarVisible && (
-        <div className="flex flex-col w-[450px] h-screen bg-green3 sidebar">
-           <div className='flex flex-row ml-[30px] mt-[35px] '>
+        <div className="flex flex-col w-[40%] h-screen bg-green3 ">
+           <div className='flex flex-row ml-[30px] mt-[35px] mc '>
+            <div className='mclogo'>
               <Image src="/logo.svg" alt="logo" width={150} height={150} />
+            </div>
             <div className=' flex justify-end w-full mr-4 '>
               <button onClick={toggleSidebar}>
+                <div className='mclogo2'>
                 <Image src="/menu.svg" alt="logo" width={20} height={5} />
+                </div>
               </button>
             </div>
           </div>
-          <div className="flex flex-col mt-[80px] ml-[30px] mr-4 ">
+          <div className="flex flex-col mt-[80px] ml-[30px] mr-4 mclist ">
             <ul>
               {/* Sidebar links */}
               <li className='flex h-[40px] items-center cursor-pointer hover:bg-green1 hover:rounded-lg hover:text-white'
@@ -75,7 +79,7 @@ const Maincontent = () => {
                 <Image src="/check.svg" alt="logo" width={20} height={5} className=' ml-2 mr-2' /> Todolist </li>
               <li className='flex h-[40px] items-center cursor-pointer hover:bg-green1 hover:rounded-lg hover:text-white'
                 onClick={() => setActiveComp('Completed')}>
-                <Image src="/note.svg" alt="logo" width={20} height={5} className='ml-2 mr-2' /> Completed Tasks </li>
+                <Image src="/note.svg" alt="logo" width={20} height={5} className='ml-2 mr-2' /> Completed  </li>
               <li className='flex h-[40px] items-center cursor-pointer hover:bg-green1 hover:rounded-lg hover:text-white'
                 onClick={() => setActiveComp('Calender')}>
                 <Image src="/calender.svg" alt="logo" width={20} height={5} className=' ml-2 mr-2' /> Events </li>
@@ -90,7 +94,7 @@ const Maincontent = () => {
         
         </div>
       )}
-      <div className="flex flex-col p-[80px] w-full h-auto ">
+      <div className="flex flex-col p-[80px] w-full h-auto sidebar">
         {!sidebarVisible && (
           <button onClick={toggleSidebar} className="fixed top-4 left-4 z-50 ml-4 mt-5 ">
             <Image src="/menu.svg" alt="menu" width={20} height={5} />
